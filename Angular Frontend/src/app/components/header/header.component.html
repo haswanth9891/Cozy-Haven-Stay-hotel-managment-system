@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/logo.jpg" alt="Cozy Haven Logo" height="40">
+            COZY HAVEN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/ourHotels">Our Hotels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/about">About</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+
+                    Sign Up
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a routerLink="/user-register">User</a></li>
+                    <li><a routerLink="/hotelowner-register">Hotel Owner</a></li>
+                </ul>
+            </li>
+        </div>
+        <div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Login
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a routerLink="/login">User</a></li>
+                    <li><a routerLink="/hotelowner-login">Hotel Owner</a></li>
+                    <li><a routerLink="/admin-login">Admin</a></li>
+                </ul>
+            </li>
+        </div>
+
+
+
+    </div>
+</nav>

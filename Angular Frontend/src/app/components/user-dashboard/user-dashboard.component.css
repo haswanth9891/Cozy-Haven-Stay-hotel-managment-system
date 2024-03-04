@@ -1,0 +1,219 @@
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(360deg);
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b18800;
+}
+
+.navbar-nav li {
+    margin: 0 10px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Navbar Links Hover Effect */
+.navbar-nav a:hover {
+    color: #b18800;
+}
+
+/* Navbar Links Blow Effect */
+.navbar-nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #b18800;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.butt1 {
+    height: 40px;
+    width: 120px;
+    background-color: transparent;
+    color: #b18800;
+    border: 3px solid;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.butt1:hover {
+    opacity: 0.8;
+}
+
+
+.background-image {
+    background-image: url('../../../assets/userhome.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background-image::before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+    padding-top: 100px;
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-body {
+    padding: -10px;
+}
+
+.card-header {
+    background-color: #b18800;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #b18800;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    background-color: white;
+    color: #b18800;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: white;
+    color: #b18800;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+button[type="submit"]:active {
+    box-shadow: 0 0 20px rgba(177, 136, 0, 0.8);
+    transform: translateY(2px);
+    background-color: #ba9109;
+    color: white;
+}
+
+.btn.btn-outline-info {
+    color: #b18800;
+    border-color: #b18800;
+}
+
+.btn.btn-outline-info:hover {
+    color: #fff;
+    background-color: #b18800;
+    border-color: #b18800;
+}
+
+.btn.btn-outline-info:focus,
+.btn.btn-outline-info.focus,
+.btn.btn-outline-info:active,
+.btn.btn-outline-info.active {
+    color: #fff;
+    background-color: #b18800;
+
+    border-color: #b18800;
+
+}
+
+.btn.btn-outline-info:not(:disabled):not(.disabled):active:focus,
+.btn.btn-outline-info:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5);
+
+}
+
+.btn-primary.custom-btn,
+.btn-primary.custom-btn:hover,
+.btn-primary.custom-btn:focus,
+.btn-primary.custom-btn.focus,
+.btn-primary.custom-btn:active,
+.btn-primary.custom-btn.active {
+    background-color: #b18800;
+
+    border-color: #b18800;
+
+    box-shadow: none;
+
+}
+
+.btn-primary.custom-btn:not(:disabled):not(.disabled):active:focus,
+.btn-primary.custom-btn:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5);
+
+}

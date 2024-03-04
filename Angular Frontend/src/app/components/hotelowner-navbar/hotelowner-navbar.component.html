@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="hotelowner-navbar/hotelowner-dashboard">
+            <img src="../assets/logo.jpg" alt="Cozy Haven Logo" height="40">
+            COZY HAVEN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/hotelowner-navbar/hotelowner-dashboard">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/hotelowner-navbar/add-room">Add Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/hotelowner-navbar/hotelowner-rooms-list">My Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="nav-link btn btn-secondary dropdown-toggle" type="button"
+                            id="manageBookingDropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Manage Bookings
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="manageBookingDropdown">
+                            <a class="dropdown-item" routerLink="/hotelowner-navbar/hotelowner-manage-booking">All
+                                Bookings</a>
+                            <a class="dropdown-item"
+                                routerLink="/hotelowner-navbar/hotelowner-cancelled-reservations">Cancelled Bookings</a>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div>
+            <button class="butt1" (click)="logout()">Log Out</button>
+        </div>
+
+
+
+    </div>
+</nav>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
